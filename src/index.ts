@@ -4,14 +4,14 @@ import { EventEmitter } from './components/base/events';
 import { ProductData } from './components/ProductCard/ProductData';
 import { ProductPreview } from './components/modals/ProductPreview';
 import { BasketView } from './components/basket/BasketView';
-import { OrderManager } from './components/Order/OrderManager';
+import { OrderManager } from './components/order/OrderManager';
 import { ProductCard } from './components/ProductCard/ProductCard';
 import { ModalView } from './components/modals/ModalView';
 import { SuccessView } from './components/forms/SuccessView';
 import { PageComponent } from './components/PageComponent';
 import { cloneTemplate, ensureElement } from './utils/utils';
 import { BasketItem } from './components/basket/BasketItem';
-import { OrderForm } from './components/Order/OrderForm';
+import { OrderForm } from './components/order/OrderForm';
 import { BasketProductInfo, OrderFormData } from './types';
 import './scss/styles.scss';
 
