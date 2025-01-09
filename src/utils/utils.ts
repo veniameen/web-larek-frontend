@@ -81,6 +81,7 @@ export function setElementData<T extends Record<string, unknown> | object>(el: H
 /**
  * Получает типизированные данные из dataset атрибутов элемента
  */
+// eslint-disable-next-line @typescript-eslint/ban-types
 export function getElementData<T extends Record<string, unknown>>(el: HTMLElement, scheme: Record<string, Function>): T {
     const data: Partial<T> = {};
     for (const key in el.dataset) {
@@ -132,4 +133,16 @@ export function createElement<
         }
     }
     return element;
+}
+
+export function formatBasketTotal(x: number) {
+    if (!x) return `0 синапсов`
+    else return `${x} синапсов`;
+    
+}
+
+export function formatNumber(x: number) {
+    if (!x) return `Бесценно`
+    else return `${x} синапсов`;
+    
 }
